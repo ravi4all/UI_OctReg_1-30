@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #parent p {
+            font-size: 20px;
+            color: red;
+        }
+        #parent > p {
+            color: blue;
+        }
+        #parent + h2 {
+            color: green;
+        }
+        #parent ~ h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Advance Selectors...</h1>
+   
+   <div id="parent">
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reprehenderit facilis ducimus recusandae saepe, corporis tenetur fugiat labore, explicabo non sit? Iure id quo ipsam. At tenetur, quas odio optio?
+       </p>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reprehenderit facilis ducimus recusandae saepe, corporis tenetur fugiat labore, explicabo non sit? Iure id quo ipsam. At tenetur, quas odio optio?
+       </p>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reprehenderit facilis ducimus recusandae saepe, corporis tenetur fugiat labore, explicabo non sit? Iure id quo ipsam. At tenetur, quas odio optio?
+       </p>
+       <div class="child">
+           <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reprehenderit facilis ducimus recusandae saepe, corporis tenetur fugiat labore, explicabo non sit? Iure id quo ipsam. At tenetur, quas odio optio?
+           </p>
+           <div class="grandchild">
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere accusamus blanditiis animi odio eligendi quam vero doloremque aliquam sequi quisquam itaque explicabo, illum voluptatum molestias assumenda omnis, maiores distinctio velit!
+               </p>
+           </div>
+       </div>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reprehenderit facilis ducimus recusandae saepe, corporis tenetur fugiat labore, explicabo non sit? Iure id quo ipsam. At tenetur, quas odio optio?
+       </p>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reprehenderit facilis ducimus recusandae saepe, corporis tenetur fugiat labore, explicabo non sit? Iure id quo ipsam. At tenetur, quas odio optio?
+       </p>
+   </div>
+   <hr>
+   <h2>This heading is outside parent div</h2>
+   <h2>This heading is outside parent div</h2>
+   <h2>This heading is outside parent div</h2>
+   <h2>This heading is outside parent div</h2>
+    
+</body>
+</html>
