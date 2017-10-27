@@ -1,0 +1,38 @@
+/*
+Floating with Clearfix
+*/
+
+/*
+PseudoElement - ::after and ::before
+*/
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.column_1 {
+    float: left;
+    width: 30%;
+    /*background-color: lightcoral;*/
+}
+
+.column_2 {
+    float: right;
+    width: 30%;
+    /*background-color: lightblue;*/
+}
+
+#parent{
+    background-color: red;
+    /*height: 200px;*/
+}
+
+.clear {
+    clear: both;
+}
+
+.div_1 {
+    /*clear:  both;*/
+    background-color: lightgray;
+}
