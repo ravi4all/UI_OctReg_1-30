@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1:after {
+            content: "...";
+        }
+        h2 {
+            text-align: center;
+            /*border-right: 2px solid;*/
+        }
+        h2 {
+            position: relative;
+        }
+        h2:after {
+            /*content: "Hello";*/
+            content: "";
+            position: absolute;
+            border: 2px solid #000;
+            width: 35%;
+            right: 0px;
+            top: 15px;
+        }
+        h2:before {
+            /*content: "Hello";*/
+            content: "";
+            position: absolute;
+            border: 2px solid red;
+            width: 35%;
+            left: 0px;
+            top: 15px;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Pseudo Elements</h1>
+   
+   <h2>This is a heading</h2>
+   <h2>This is a heading</h2>
+   <h2>This is a heading</h2>
+   <h2>This is a heading</h2>
+   <h2>This is a heading</h2>
+    
+</body>
+</html>
