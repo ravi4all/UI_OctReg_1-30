@@ -1,0 +1,20 @@
+.earth {
+    position: absolute;
+    left: 40%;
+}
+
+.rocket {
+    height: 70px;
+    width: 520px;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/whsr-january-flaticon-set/512/rocket.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    transition-duration: 205s;
+}
+
+#container:hover .rocket{
+    transform: rotate(36000deg);
+}
