@@ -13,6 +13,8 @@
     background-size: auto 100%;
     background-repeat: no-repeat;
     transition-duration: 205s;
+    /*transition-delay: 4s;*/
+    transition-timing-function: linear;
 }
 
 #container:hover .rocket{

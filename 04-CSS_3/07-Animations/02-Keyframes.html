@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            position: absolute;
+            bottom: 5%;
+            left: 40%;
+            width: 15%;
+            animation: football 5s infinite linear;
+            /*animation-timing-function: linear;
+            animation-iteration-count: infinite;*/
+        }
+        @keyframes football{
+            0% {
+                left: 40%;
+                bottom: 5%;
+            }
+            25% {
+                left: 0%;
+                bottom: 40%;
+                transform: rotate(360deg);
+            }
+            50% {
+                left: 40%;
+                bottom: 75%;
+                transform: rotate(720deg);
+            }
+            75% {
+                left: 80%;
+                bottom: 40%;
+            }
+            100% {
+                left: 40%;
+                bottom: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Keyframes</h1>
+   
+   <img src="../../images/Football.png" alt="image">
+    
+</body>
+</html>

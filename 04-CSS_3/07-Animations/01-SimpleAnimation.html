@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .div_1 {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            animation-name: anim_1;
+            animation-duration: 5s;
+        }
+        @keyframes anim_1 {
+            from {
+                transform: translate(0px, 0px);
+            }
+            to {
+                transform: translate(700px, 100px) rotateY(180deg);
+            }
+        }
+        .image {
+            animation-name: walk;
+            animation-duration: 5s;
+        }
+        @keyframes walk{
+            from {
+                transform: translate(-110%, 0%);
+            }
+            to {
+                transform: translate(1500px, 0%);
+            }
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Basic Animation</h1>
+   
+   <div class="div_1"></div>
+   <div>
+       <img src="../../images/hulk5-18463.gif" class="image" alt="">
+   </div>
+    
+</body>
+</html>
