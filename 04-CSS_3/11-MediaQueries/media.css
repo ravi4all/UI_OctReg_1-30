@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    padding: 10px 15px;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header h1 {
+    margin: 0px;
+}
+
+#main-nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 8px 0px 0px;
+    display: flex;
+}
+#main-nav ul li {
+    margin: 0px 10px;
+}
+
+#main-nav .menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: none;
+    width: 30px;
+    background-color: transparent;
+    pointer-events: none;
+}
+#main-nav .menu-btn .line {
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+    width: 30px;
+    display: block;
+    transition: 1s;
+}
+#main-nav input[value="open-menu"] {
+    position: absolute;
+    top: 14px;
+    right: 11px;
+    height: 20px;
+    width: 30px;
+    display: block;
+    opacity: 0;
+}
+
+@media(max-width: 768px){
+    #main-nav ul {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        /*top: -120%;*/
+        top: 60px;
+        transform: scale(1,0);
+        display: block;
+        background-color: rgba(0,0,0,0.8);
+        padding: 20px 0px;
+        transition: 1s;
+        transform-origin: top;
+        text-align: center;
+        /*display: none;*/
+    }
+    #main-nav ul li {
+        font-size: 20px;
+        margin: 0px 0px 25px;
+    }
+    #main-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    #main-nav input[value="open-menu"]:checked ~ ul {
+        /*display: block;*/
+        /*top: 60px;*/
+        transform: scale(1,1);
+    }
+    #main-nav input[value="open-menu"]:checked + .menu-btn .line:nth-child(2) {
+        opacity: 0;
+    }
+    #main-nav input[value="open-menu"]:checked + .menu-btn .line:first-child {
+        transform: rotate(45deg) translateY(12px);
+    }
+    #main-nav input[value="open-menu"]:checked + .menu-btn .line:last-child {
+        transform: rotate(-45deg) translateY(-12px);
+    }
+}
+
+#parent {
+    display: flex;
+}
+.main {
+    /*float: left;*/
+    width: 50%;
+    border: 2px solid red;
+    background-color: lightgray;
+    padding: 10px;
+}
+.column {
+    /*float: left;*/
+    width: 25%;
+    border: 2px solid red;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+@media(max-width:1200px){
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media(max-width:768px){
+    /*#parent div {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }*/
+    #parent {
+        display: block;
+    }
+    #parent div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width: 992px){
+    body {
+        background-color: lightcoral;
+    }
+}
+
+
+
+
